@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&family=Silkscreen:wght@400;700&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+*{
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: clamp(0.1rem, 1rem + 1.5vw, 1.2rem);
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100dvw;
+  min-height: 100dvh;
+  background-color: #020d17;
+  background-image: 
+    radial-gradient(circle at 20% 20%, rgba(10, 25, 47, 0.8) 0%, transparent 40%),
+    radial-gradient(circle at 80% 50%, rgba(10, 25, 47, 0.6) 0%, transparent 40%),
+    radial-gradient(circle at 40% 80%, rgba(10, 25, 47, 0.7) 0%, transparent 40%);
+  background-attachment: fixed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body::-webkit-scrollbar {
+  width: 10px; 
+  background-color: var(--primary-color);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-color); /* Color del thumb */
+  border-radius: 10px; /* Bordes redondeados */
+  border: 2px solid var(--secondary-color); /* Añadir un borde para un efecto de separación */
+}
+
+/* Estilo al pasar el cursor sobre el thumb */
+body::-webkit-scrollbar-thumb:hover {
+  background-color: white; /* Color del thumb al pasar el cursor */
+}
+
+/* Estilo del track (el fondo del scrollbar) */
+body::-webkit-scrollbar-track {
+  background-color: var(--primary-color); /* Color del track */
+  border-radius: 10px; /* Bordes redondeados del track */
+}
+
+/* Estilo del corner (la esquina del scrollbar en el caso de scroll horizontal y vertical) */
+body::-webkit-scrollbar-corner {
+  background-color: var(--primary-color); /* Color de la esquina */
+}
+
+/* 
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+*{
+  font-family: 'NotoSans';
+} */
+a{
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}

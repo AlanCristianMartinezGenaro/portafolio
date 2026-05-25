@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'NotoSans';
+    src: url("/src/assets/fonts/Noto_Sans/static/NotoSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Solar';
+    src: url("/src/assets/fonts/solar_space/SOLAR\ SPACE\ DEMO.ttf");
+}
+
+@font-face {
+    font-family: 'Suntage';
+    src: url('/src/assets/fonts/suntage/Suntage.ttf');
+}

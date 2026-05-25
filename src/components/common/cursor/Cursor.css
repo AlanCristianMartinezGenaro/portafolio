@@ -1,0 +1,23 @@
+.cursor-center, .cursor-aureola {
+  z-index: 10;
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+
+.cursor-aureola {
+  width: 55px;
+  height: 55px;
+  border: 4px solid #ffffff60;
+  transition: transform 0.1s ease-out;
+  opacity: 5;
+  box-shadow: var(--white) 0px 0px 11px;
+}
+
+
+.cursor-center {
+  width: 10px;
+  height: 10px;
+  background: var(--secondary-color);
+}

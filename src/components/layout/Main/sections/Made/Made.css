@@ -1,0 +1,67 @@
+.Made {
+    width: 80%;
+    max-width: 1000px;
+    margin: 100px auto;
+    padding: 40px 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    position: relative;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    transition: all 0.4s ease;
+}
+
+.Made:hover {
+    border-color: rgba(0, 210, 255, 0.4);
+    background: rgba(255, 255, 255, 0.04);
+    transform: translateY(-5px);
+    box-shadow: 0 20px 50px rgba(0, 210, 255, 0.1);
+}
+
+.Made .text-made {
+    flex: 2;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: clamp(0.9rem, 1.1rem + 0.3vw, 1.4rem);
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+}
+
+.Made .react-animation {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    filter: drop-shadow(0 0 25px rgba(0, 210, 255, 0.5));
+    animation: reactPulse 4s ease-in-out infinite;
+}
+
+@keyframes reactPulse {
+    0%, 100% { 
+        transform: scale(1); 
+        filter: drop-shadow(0 0 15px rgba(0, 210, 255, 0.3));
+    }
+    50% { 
+        transform: scale(1.15); 
+        filter: drop-shadow(0 0 35px rgba(0, 210, 255, 0.6));
+    }
+}
+
+@media (max-width: 1024px) {
+    .Made {
+        flex-direction: column;
+        width: 90%;
+        text-align: center;
+        gap: 40px;
+        padding: 40px 30px;
+    }
+
+    .Made .text-made {
+        font-size: 1.1rem;
+    }
+}
